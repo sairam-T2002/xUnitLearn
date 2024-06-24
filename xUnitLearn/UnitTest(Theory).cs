@@ -46,10 +46,10 @@ namespace xUnitLearn
         {
             if(_service is Service1)
             {
-                Assert.Equal("Hello "+str,(_service as Service1).Greet(str));
+                Assert.Equal("Hello "+str,(_service as Service1)?.Greet(str));
             }else if(_service is Service2)
             {
-                Assert.Equal("Hello " + str, (_service as Service2).Conclude(str));
+                Assert.Equal("Hello " + str, (_service as Service2)?.Conclude(str));
             }
         }
     }
