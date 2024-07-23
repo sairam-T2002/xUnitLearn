@@ -4,9 +4,6 @@ namespace SampleApplication.Service
 {
     public class Service2:ITest
     {
-        public string Conclude( string name )
-        {
-            return "Bye " + name;
-        }
+        public string Conclude( string name )=> "Bye " + name;
     }
 }
